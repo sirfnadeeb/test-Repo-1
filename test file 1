@@ -1,0 +1,23 @@
+// AddStrings.java
+import java.util.Scanner;
+
+public class AddStrings {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first string: ");
+        String first = sc.nextLine();
+        System.out.print("Enter second string: ");
+        String second = sc.nextLine();
+
+        // simple concatenation
+        String concat = first + second;
+        System.out.println("Concatenated (using +): " + concat);
+
+        // using StringBuilder
+        StringBuilder sb = new StringBuilder();
+        sb.append(first).append(second);
+        System.out.println("Concatenated (using StringBuilder): " + sb.toString());
+
+        sc.close();
+    }
+}
